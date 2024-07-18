@@ -9,7 +9,7 @@ const Stack = createStackNavigator<MainStackProps>();
 
 const MainStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name='Main' component={MainView} />
     </Stack.Navigator>
   );
