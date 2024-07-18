@@ -1,11 +1,13 @@
-import { Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+
+import { NavigationContainer } from '@react-navigation/native';
+import MainStack from './routes/MainStack';
 
 const App = () => {
-  
   return (
-    <View>
-      <Text>DOT</Text>
-    </View>
+    <NavigationContainer>
+      <MainStack />
+    </NavigationContainer>
   );
 }
 
