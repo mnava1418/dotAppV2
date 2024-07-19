@@ -4,12 +4,13 @@ import { globalStyles } from '../../styles/mainStyles'
 
 type ButtonProps = {
     label: string,
-    onPress: () => void
+    onPress: () => void,
+    style?: {}
 }
 
-const Button = ({label, onPress}: ButtonProps) => {
+const Button = ({label, onPress, style = {}}: ButtonProps) => {
   return (
-    <View style={globalStyles.btnContainer}>
+    <View style={{...style, ...globalStyles.btnContainer}}>
         <Pressable 
             style={({pressed}) => ({
                 ...globalStyles.btn,
