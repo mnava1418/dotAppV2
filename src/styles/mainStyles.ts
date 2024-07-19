@@ -10,7 +10,6 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
         resizeMode: 'cover',
         justifyContent: 'center',
-        alignItems: 'center'
     },
 
     txtLarge: {
@@ -25,7 +24,6 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'rgba(0, 0, 0, 0.2)',
         justifyContent: 'center',
-        alignItems: 'center',
     },
 
     btnTxt: {
@@ -40,12 +38,10 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: globalColors.primary,
         paddingVertical: 16,
         borderRadius: 24,
-        width: 300
     },
 
     btnContainer: {
         backgroundColor: '#000',
         borderRadius: 24,
-        margin: 8
     }
 })
