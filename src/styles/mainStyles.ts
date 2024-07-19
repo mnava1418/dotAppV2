@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const globalColors = {
     text: '#94B8D7',
-    primary: '#153F59'
+    primary: '#153F59',
+    background: '#012E46'
 }
 
 export const globalStyles = StyleSheet.create({
@@ -12,11 +13,23 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    txtLarge: {
+    txt: {
         color: globalColors.text,
+        fontFamily: 'Roboto'
+    },
+
+    txtLarge: {
         fontSize: 40,
         fontWeight: '700',
-        fontFamily: 'Roboto'
+    },
+
+    txtMedium: {
+        fontSize: 30,
+        fontWeight: '700',
+    },
+
+    txtNormal: {
+        fontSize: 24
     },
 
     overlay: {
@@ -30,18 +43,45 @@ export const globalStyles = StyleSheet.create({
         color: globalColors.text,
         fontFamily: 'Roboto',
         fontSize: 24,
-        fontWeight: '600',
         textAlign: 'center'
     },
 
+    btnTxtPrimary: {
+        fontWeight: '600',
+    },
+
     btn: {
-        backgroundColor: globalColors.primary,
         paddingVertical: 16,
-        borderRadius: 24,
+        borderRadius: 20,
+    },
+
+    btnPrimary: {
+        backgroundColor: globalColors.primary
+    },
+
+    btnSecondary: {
+        backgroundColor: globalColors.background
     },
 
     btnContainer: {
         backgroundColor: '#000',
-        borderRadius: 24,
-    }
+        borderRadius: 20,
+    },
+
+    mainContainer: {
+        flex: 1,
+        backgroundColor: globalColors.background,
+        paddingHorizontal: 16,
+        color: globalColors.text,
+        fontFamily: 'Roboto'
+    },
+
+    input: {
+        height: 52,
+        backgroundColor: globalColors.text,
+        color: globalColors.background,
+        borderRadius: 20,
+        paddingHorizontal: 10,
+        fontSize: 20
+    },
 })
